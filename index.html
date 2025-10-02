@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp - Download Our Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">📱</div>
+                <h1>MyApp</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Simplify Your Daily Tasks</h2>
+                    <p>MyApp is the ultimate productivity tool that helps you organize your life and get more done in less time.</p>
+                    <button id="downloadBtn" class="download-btn">
+                        <span class="btn-text">Download APK</span>
+                        <span class="btn-icon">⬇️</span>
+                    </button>
+                    <p class="file-info">Version 2.1.5 | 45 MB | Android 8.0+</p>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <div class="phone-screen"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="features">
+                <h3>Amazing Features</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Lightning Fast</h4>
+                        <p>Optimized performance for quick loading and smooth operation.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h4>Secure & Private</h4>
+                        <p>Your data is encrypted and never shared with third parties.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h4>Cloud Sync</h4>
+                        <p>Access your data across all devices with seamless synchronization.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h4>Customizable</h4>
+                        <p>Personalize the interface to match your style and preferences.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h3>About MyApp</h3>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>MyApp was created with a simple goal: to make your daily life easier. We've combined powerful features with an intuitive interface that anyone can use.</p>
+                        <p>Whether you're managing tasks, tracking habits, or organizing information, MyApp adapts to your workflow.</p>
+                        <ul>
+                            <li>✓ No ads or hidden costs</li>
+                            <li>✓ Regular updates with new features</li>
+                            <li>✓ Dedicated customer support</li>
+                        </ul>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Downloads</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">4.8</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MyApp</h4>
+                    <p>Simplifying your digital life one task at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@myapp.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MyApp. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Download MyApp</h3>
+            <p>Your download will begin shortly. If it doesn't start automatically, <a href="#" id="manualDownload">click here</a>.</p>
+            <div class="download-progress">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="progress-text">Preparing download...</span>
+            </div>
+            <div class="modal-actions">
+                <button id="cancelDownload" class="btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
